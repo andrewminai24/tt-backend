@@ -1,3 +1,5 @@
+import CATEGORIES from '../public/temp/categories';
+
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -13,7 +15,8 @@ categoryRouter.route('/')
     .get((req, res, next) => {
         // TODO: Query database for categories
         // and return categories as JSON object
-        res.end('{"name": "GET"}');
+        //res.end('{"name": "GET"}');
+        res.end(`${CATEGORIES}`);
     })
     .post((req, res, next) => {
         // TODO: Priviledged action, implement
