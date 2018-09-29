@@ -1,4 +1,4 @@
-import CATEGORIES from '../public/temp/categories';
+let CATEGORIES = require('../public/temp/categories');
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -15,7 +15,6 @@ categoryRouter.route('/')
     .get((req, res, next) => {
         // TODO: Query database for categories
         // and return categories as JSON object
-        //res.end('{"name": "GET"}');
         res.end(JSON.stringify(CATEGORIES));
     })
     .post((req, res, next) => {
@@ -32,4 +31,4 @@ categoryRouter.route('/')
         res.end('{"name": "DELETE"}');
     });
 
-    module.exports = categoryRouter;
+module.exports = categoryRouter;

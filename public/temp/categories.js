@@ -1,4 +1,4 @@
-export const CATEGORIES = [
+module.exports = [
     { "name": "age21", "image": "https://i.postimg.cc/85CwM96P/a21.png" },
     { "name": "after5pm", "image": "https://i.postimg.cc/RFbdRd71/after5pm.png" },
     { "name": "art", "image": "https://i.postimg.cc/WbrRdqVY/art.png" },
