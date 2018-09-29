@@ -13,20 +13,20 @@ categoryRouter.route('/')
     .get((req, res, next) => {
         // TODO: Query database for categories
         // and return categories as JSON object
-        res.end('');
+        res.end('{"name": "GET"}');
     })
     .post((req, res, next) => {
         // TODO: Priviledged action, implement
         // user authentication to allow this action
-        res.end('');
+        res.end('{"name": "POST"}');
     })
     .put((req, res, next) => {
         res.statusCode = 403;
-        res.end('PUT: FORBIDDEN OPERATION');
+        res.end('{"name": "PUT Forbidden"}');
     })
     .delete((req, res, next) => {
         // TODO: Priviledged action... user auth.
-        res.end('');
+        res.end('{"name": "DELETE"}');
     });
 
     module.exports = categoryRouter;
