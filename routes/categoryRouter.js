@@ -16,7 +16,7 @@ categoryRouter.route('/')
         // TODO: Query database for categories
         // and return categories as JSON object
         //res.end('{"name": "GET"}');
-        res.end(CATEGORIES);
+        res.end(JSON.stringify(CATEGORIES));
     })
     .post((req, res, next) => {
         // TODO: Priviledged action, implement
