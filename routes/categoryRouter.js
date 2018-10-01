@@ -21,6 +21,7 @@ categoryRouter.route('/')
         // TODO: Priviledged action, implement
         // user authentication to allow this action
         res.end('{"name": "POST"}');
+        // res.end(`{"name":"${req.params.name}"}`);
     })
     .put((req, res, next) => {
         res.statusCode = 403;
