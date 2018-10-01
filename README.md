@@ -16,13 +16,13 @@ Let's just pass parameters in the request body instead of directly in the URL.
 3. APIs (all applicable)
   * Categories
     1. GET /categories (returns all categories)
-    2. POST /categories (adds new category; ~~ex: /categories?name="Movies"&image="uri/to/image")
+    2. POST /categories (adds new category; ~~ex: /categories?name="Movies"&image="uri/to/image"~~)
     3. PUT (not applicable)
     4. DELETE /categories (deletes all categories)
   * Categories/:categoryId
     1. GET /categories/123 (returns category 123)
     2. POST (not applicable)
-    3. PUT /categories (updates category; ex: ~~/categories/123?oldName="Movies"&newName="Theater Showings")
+    3. PUT /categories (updates category; ex: ~~/categories/123?oldName="Movies"&newName="Theater Showings"~~)
     4. DELETE /categories/123 (deletes category 123)
   * Events
     1. GET /events (returns all events)
